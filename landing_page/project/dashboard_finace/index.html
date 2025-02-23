@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinLearn - Your Personal Financial Education Dashboard">
+    <meta name="keywords" content="financial education, finance dashboard, money management, financial learning">
+    <meta property="og:title" content="FinLearn Dashboard">
+    <meta property="og:description" content="Master your financial knowledge with FinLearn's interactive dashboard">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FinLearn Dashboard">
+    <meta name="twitter:description" content="Master your financial knowledge with FinLearn's interactive dashboard">
+    <title>FinLearn Dashboard</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/sidebar.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/WelcomeBox.js"></script>
+    <script type="text/babel" src="components/ProgressTracker.js"></script>
+    <script type="text/babel" src="components/ActivityHeatMap.js"></script>
+    <script type="text/babel" src="components/BudgetTracker.js"></script>
+    <script type="text/babel" src="components/StatsBar.js"></script>
+    <script type="text/babel" src="components/LevelUpSection.js"></script>
+    <script type="text/babel" src="components/ProfileModal.js"></script>
+    <script type="text/babel" src="utils/theme.js"></script>
+    <script type="text/babel" src="utils/search.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
