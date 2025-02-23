@@ -1,0 +1,115 @@
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .quiz-container {
+    background-color: #1f2937;
+}
+
+.quiz-timer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9333ea;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.quiz-option {
+    padding: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.dark .quiz-option {
+    border-color: #374151;
+}
+
+.quiz-option:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9333ea;
+    border-radius: 50%;
+}
+
+.quiz-option.selected {
+    background-color: #9333ea15;
+    border-color: #9333ea;
+}
+
+.quiz-option.selected:before {
+    background-color: #9333ea;
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.quiz-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.quiz-button.submit {
+    background-color: #9333ea;
+    color: white;
+}
+
+.quiz-button.submit:hover {
+    background-color: #7c2cd1;
+}
+
+.quiz-button.next {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.quiz-button.next:hover {
+    background-color: #4338ca;
+}
+
+.quiz-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.question-progress {
+    height: 4px;
+    background-color: #e5e7eb;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #9333ea;
+    transition: width 0.3s ease;
+}

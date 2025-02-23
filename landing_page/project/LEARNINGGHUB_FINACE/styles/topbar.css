@@ -1,0 +1,86 @@
+.topbar {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+}
+
+.dark .topbar {
+    background-color: #1f2937;
+}
+
+.light .topbar {
+    background-color: #f3f4f6;
+}
+
+.search-container {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 35px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+}
+
+.voice-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8b5cf6;
+    cursor: pointer;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-icon {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.dark .control-icon {
+    color: #1f2937;
+}
+
+.control-icon:hover {
+    background-color: rgba(107, 114, 128, 0.2);
+}
+
+.profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dark .search-input {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.dark .search-icon {
+    color: #1f2937;
+}
